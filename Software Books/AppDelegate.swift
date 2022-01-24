@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.backgroundColor = UIColor(red: 241/255.0, green: 90/255.0, blue: 35/255.0, alpha: 1.0)
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UITabBar.appearance().tintColor = .systemGreen
                return true
     }
 

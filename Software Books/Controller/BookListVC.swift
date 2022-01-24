@@ -42,6 +42,15 @@ class BookListVC: UIViewController {
   
 extension BookListVC: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       performSegue(withIdentifier: "goToBookInfo", sender: self)
+       }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! BookInfoVC
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.title1 = books[indexPath.row].volumeInfo.title
+        }
+    }
 }
 
 extension BookListVC: UITableViewDataSource {
