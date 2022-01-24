@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "0CDCF052-BDA3-4D3B-A9A1-D9557866871B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF48DD7C-D5D3-45F1-ABFF-5AF6F2A56B0C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4C058E1-6034-4363-9588-BFA84F567259"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BA8B1388-A825-484F-A9C6-D319E0FD2427"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1866C84B-9C6A-46A8-8F64-C73F4FD99373"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03F77C23-BF52-440B-A195-656B61E811C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Software Books/Controller/BookListVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "BookListVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - 1aa87c845ec301e3"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.networking.getter : Software_Books.Networking"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - 91bfc3cd98bbf7f7"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.networking.setter : Software_Books.Networking"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - 8b047ec657025b15"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.networking.modify : Software_Books.Networking"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - 61034753ae9d3f75"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.networking.modify : Software_Books.Networking with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "15">
+               </Location>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - b6056bf961688d90"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Software_Books.BookListVC"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "147">
+               </Location>
+               <Location
+                  uuid = "1A3D1500-B89D-46F8-8C1D-BCC4B18FE0B0 - ca152f6036471fef"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Software_Books.BookListVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Software_Books.BookListVC&gt;"
+                  moduleName = "Software Books"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hivzi/Desktop/IOS_Development/Software%20Books/Software%20Books/Software%20Books/Controller/BookListVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
