@@ -19,7 +19,6 @@ class BookListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("viewDidLoad")
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "BookListTableViewCell", bundle: nil),        forCellReuseIdentifier: "ReusableBookCell")
@@ -48,7 +47,35 @@ extension BookListVC: UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! BookInfoVC
         if let indexPath = tableView.indexPathForSelectedRow {
-            destinationVC.title1 = books[indexPath.row].volumeInfo.title
+            let book = books[indexPath.row].volumeInfo
+          
+            destinationVC.title1 = book.title
+            destinationVC.author1 = book.authors?[0]
+            if book.authors?.count ?? 1 > 1 {
+                destinationVC.author2 = book.authors![1]
+            }
+            destinationVC.publisherName = book.publisher
+            destinationVC.publishedData = book.publishedDate
+            
+            destinationVC.pageNumber = book.pageCount ?? 0
+            destinationVC.descript = book.description ?? ""
+            
+          
+            
+            
+            guard  books[indexPath.row].volumeInfo.imageLinks.thumbnail  != nil else { return }
+            let url = URL(string: books[indexPath.row].volumeInfo.imageLinks.smallThumbnail! )
+            let session = URLSession.shared
+            
+            let dataTask = session.dataTask(with: url!) { data, response, error in
+                if error == nil && data != nil {
+                    let image = UIImage(data: data!)
+                    destinationVC.imageVariable = image
+                    
+                }
+            }
+            dataTask.resume()
+            
         }
     }
 }
@@ -76,7 +103,6 @@ extension BookListVC: UITableViewDataSource {
 
 extension BookListVC: NetworkingDelegate {
     func booksFatched(booklist: [Item]) {
-        print(booklist)
         self.books = booklist
         DispatchQueue.main.async {
             self.tableView.reloadData()

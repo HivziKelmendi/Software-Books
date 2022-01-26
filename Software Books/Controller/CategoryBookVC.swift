@@ -12,7 +12,7 @@ class CategoryBookVC: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     var categories: [CategoryBook] = [
-             CategoryBook(imageCategory: "swift-og", nameCategory: "Swift"),
+             CategoryBook(imageCategory: "swift-og", nameCategory: "Swift&iOS"),
              CategoryBook(imageCategory: "objective-c", nameCategory: "Objective-C"),
              CategoryBook(imageCategory: "Java", nameCategory: "Java"),
              CategoryBook(imageCategory: "python", nameCategory: "Python"),

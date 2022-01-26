@@ -28,8 +28,9 @@ struct VolumeInfo: Codable {
      var publishedDate: String?
      var description: String?
     var imageLinks: ImageLinks
+    var pageCount: Int?
 }
 struct ImageLinks: Codable {
-      var smallThumbnail: String
+      var smallThumbnail: String?
     var  thumbnail: String?
 }

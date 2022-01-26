@@ -15,7 +15,6 @@ struct Networking {
     
     var delegate: NetworkingDelegate?
     let baseURL = "https://www.googleapis.com/books/v1/volumes?q="
-    let apiURL = "https://api.pray.zone/v2/times/today.json?city=tirana"
     func getBooks (for bookName: String) {
         let endpoint = baseURL + "\(bookName)&programming&language&maxResults=40"
         guard let url = URL(string: endpoint)  else { return }

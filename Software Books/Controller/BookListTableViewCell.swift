@@ -25,7 +25,7 @@ class BookListTableViewCell: UITableViewCell {
        self.titleLabel.text = book.volumeInfo.title ?? "No available"
         self.authorLabel.text = "by \(book.volumeInfo.authors?[0] ?? "")"
         guard  book.volumeInfo.imageLinks.smallThumbnail != nil else { return }
-        let url = URL(string: book.volumeInfo.imageLinks.smallThumbnail )
+        let url = URL(string: book.volumeInfo.imageLinks.smallThumbnail ?? "" )
         let session = URLSession.shared
         
         let dataTask = session.dataTask(with: url!) { data, response, error in
