@@ -11,14 +11,11 @@ struct Book: Codable {
    
    
     var items: [Item]
-    
 }
 
 struct Item: Codable {
     var volumeInfo: VolumeInfo
-  
 }
-
 
 struct VolumeInfo: Codable {
     var title: String?
@@ -27,7 +24,7 @@ struct VolumeInfo: Codable {
      var publisher: String?
      var publishedDate: String?
      var description: String?
-    var imageLinks: ImageLinks
+    var imageLinks: ImageLinks?
     var pageCount: Int?
 }
 struct ImageLinks: Codable {

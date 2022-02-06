@@ -16,7 +16,7 @@ struct Networking {
     var delegate: NetworkingDelegate?
     let baseURL = "https://www.googleapis.com/books/v1/volumes?q="
     func getBooks (for bookName: String) {
-        let endpoint = baseURL + "\(bookName)&programming&language&maxResults=40"
+        let endpoint = baseURL + "\(bookName)&programming&language&orderBy=newest&maxResults=40&AIzaSyDd1Fr2ofIDWF6YIsqwP44to-N8fiPwkKc"
         guard let url = URL(string: endpoint)  else { return }
         
         let session = URLSession(configuration: .default)
@@ -44,7 +44,6 @@ struct Networking {
             guard let result = json else {return}
             let booklist = result.items
             self.delegate?.booksFatched(booklist: result.items)
-            print(result.items[0].volumeInfo.imageLinks.smallThumbnail)
              }
       
         task.resume()

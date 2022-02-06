@@ -12,11 +12,11 @@ class CategoryBookVC: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     var categories: [CategoryBook] = [
-             CategoryBook(imageCategory: "swift-og", nameCategory: "Swift&iOS"),
+             CategoryBook(imageCategory: "swift-og", nameCategory: "iOS&Swift"),
              CategoryBook(imageCategory: "objective-c", nameCategory: "Objective-C"),
-             CategoryBook(imageCategory: "Java", nameCategory: "Java"),
-             CategoryBook(imageCategory: "python", nameCategory: "Python"),
-             CategoryBook(imageCategory: "javascript", nameCategory: "Javascript"),
+             CategoryBook(imageCategory: "Java", nameCategory: "java"),
+             CategoryBook(imageCategory: "python", nameCategory: "python"),
+             CategoryBook(imageCategory: "javascript", nameCategory: "javascript"),
              CategoryBook(imageCategory: "Kotlin", nameCategory: "Kotlin"),
              CategoryBook(imageCategory: "r", nameCategory: "R"),
              CategoryBook(imageCategory: "go", nameCategory: "Go"),

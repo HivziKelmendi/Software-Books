@@ -8,7 +8,8 @@
 import UIKit
 
 class BookListTableViewCell: UITableViewCell {
- 
+     
+    
     @IBOutlet weak var smallThumbnail: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -20,12 +21,11 @@ class BookListTableViewCell: UITableViewCell {
     }
     
     func updateCell(from book: Item) {
-        smallThumbnail.image = UIImage(systemName: "book.fill")
-        
+
        self.titleLabel.text = book.volumeInfo.title ?? "No available"
         self.authorLabel.text = "by \(book.volumeInfo.authors?[0] ?? "")"
-        guard  book.volumeInfo.imageLinks.smallThumbnail != nil else { return }
-        let url = URL(string: book.volumeInfo.imageLinks.smallThumbnail ?? "" )
+        if let safeUrl =   book.volumeInfo.imageLinks?.smallThumbnail {
+        let url = URL(string: safeUrl)
         let session = URLSession.shared
         
         let dataTask = session.dataTask(with: url!) { data, response, error in
@@ -35,13 +35,14 @@ class BookListTableViewCell: UITableViewCell {
                     self.smallThumbnail.image = image
                     
                 }
+            } else {
+                self.smallThumbnail.image = UIImage(systemName: "book.fill")
             }
+            
         }
         dataTask.resume()
-    }
-    
-    
-
+        }
+        }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
@@ -50,3 +51,4 @@ class BookListTableViewCell: UITableViewCell {
     
     
 }
+        
